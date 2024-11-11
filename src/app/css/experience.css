@@ -1,0 +1,9 @@
+.point:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+  }
+
+  .point p {
+    margin-left: 25px;
+  }
