@@ -13,7 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ['var(--font-raleway)', 'sans-serif']
+        sans: ['var(--font-Inter)', 'sans-serif']
       },
       container:{
         center: true,

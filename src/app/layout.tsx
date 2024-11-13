@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const raleway = Raleway({
-  subsets: ['latin'],
-  variable: '--font-raleway', // Custom CSS variable for Tailwind
+const inter = Inter({
+  variable: '--font-Inter', // Custom CSS variable for Tailwind
 });
 
 export const metadata: Metadata = {
@@ -20,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${raleway.variable} font-sans`}
+        className={`${inter.variable} font-sans`}
       >
         {children}
       </body>
