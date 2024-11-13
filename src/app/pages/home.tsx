@@ -10,7 +10,7 @@ export default function Homepage() {
                         <span className="text-xl">Software Developer</span>
                         <h1 className="h1">Hello Im,
                             <br></br>
-                            <span>Davin Kurnia</span>
+                            <span className="text-teal-500">Davin Kurnia</span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80 pt-8">
                             I’m a software developer passionate about creating innovative applications and solving problems to deliver impactful solutions using various programming languages and technologies.  </p>

@@ -16,28 +16,29 @@ const Service: React.FC = () => {
                 return <About aboutMe={resumeData.about} />;
             case "experience":
                 return <Experience experience={resumeData.experience} />;
-               
         }
     };
 
     return (
-        <div className="py-8 xl:py-32">
+        <div className="py-24 xl:py-32">
             <div className="container mx-auto xl:block text-center xl:text-left">
-                <div className="flex flex-col xl:flex-row gap-32">
+                <div className="flex flex-col xl:flex-row xl:gap-32">
                     <div>
                         <h1 className="h2">My Resume</h1>
-                        <div className="flex justify-end">
-                            <ul>
-                                <li className="my-8 cursor-pointer h4" onClick={() => setActiveTab("about")}>About</li>
-                                <li className="my-8 cursor-pointer h4" onClick={() => setActiveTab("experience")}>Experience</li>
-                                <li className="my-8 cursor-pointer h4" onClick={() => setActiveTab("skills")}>Skills</li>
+                        <div className="flex xl:justify-end justify-center">
+                            <ul className="flex xl:flex-col flex-row xl:gap-0 gap-10">
+                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 transition-all" onClick={() => setActiveTab("about")}>About</li>
+                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 transition-all" onClick={() => setActiveTab("experience")}>Experience</li>
+                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 transition-all" onClick={() => setActiveTab("skills")}>Skills</li>
                             </ul>
                         </div>
                     </div>
-                    <div className="mt-8 xl:mt-0">
-                        <h1 className="h3 pt-4">{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</h1>
-                        <div className="mt-4 max-w-xl">
-                            {renderContent()}
+                    <div className="mt-4 xl:mt-0">
+                        <h1 className="h3 xl:pt-4">{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</h1>
+                        <div className="mt-4 flex xl:justify-start justify-center">
+                            <div className="xl:max-w-xl max-w-[500px]">
+                                {renderContent()}
+                            </div>
                         </div>
                     </div>
                 </div>

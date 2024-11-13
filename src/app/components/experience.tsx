@@ -13,7 +13,7 @@ const Experience: React.FC<{ experience: ExperienceData[] }> = ({ experience }) 
             {experience.map((exp, index) => (
                 <li className="point" key={index}>
                     <p>
-                        <strong>{exp.position}</strong> <strong className="text-blue-500">@ {exp.company}</strong>
+                        <strong>{exp.position}</strong> <strong className="text-teal-500">@ {exp.company}</strong>
                     </p>
                     <p>{exp.period}</p>
                     <div className="h-4"></div>
