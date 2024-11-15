@@ -3,7 +3,10 @@ import { FaPhp } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import { RiFlutterFill } from "react-icons/ri";
+import { FaAws } from "react-icons/fa";
 
 let resumeData = {
     about: "I’m someone who’s passionate about creating digital experiences that truly resonate. I focus on understanding people’s needs and enjoy building user-friendly websites that help businesses connect with their audiences. Whether I’m working alone or with a team, I’m motivated by a love for learning, growing, and making a positive impact through my work. \n When I’m not working, you’ll probably find me reading, exploring creative hobbies, or simply recharging. ",
@@ -35,9 +38,13 @@ let resumeData = {
     skills: [
         { name: "React", icon: <FaReact></FaReact> },
         { name: "PHP", icon: <FaPhp></FaPhp> },
+        { name: "Next", icon: <SiNextdotjs></SiNextdotjs> },
+        { name: "Figma", icon: <FaFigma></FaFigma> },
+        { name: "Node Js", icon: <FaNodeJs></FaNodeJs> },
         { name: "SQL", icon: <SiMysql></SiMysql> },
+        { name: "Flutter", icon: <RiFlutterFill></RiFlutterFill> },
+        { name: "AWS", icon: <FaAws></FaAws> },
         { name: "Vue", icon: <FaVuejs></FaVuejs> },
-        { name: "Figma", icon: <FaFigma></FaFigma> }
     ]
 }
 export default resumeData
