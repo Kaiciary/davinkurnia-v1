@@ -1,20 +1,29 @@
+import { FaReact } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { FaVuejs } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+
 let resumeData = {
-    about: "I’m a passionate individual who loves creating digital experiences that make a difference. With a focus on understanding people’s needs, I enjoy building user-friendly websites that help businesses connect with their audience. Whether working independently or as part of a team, I’m driven by a desire to learn, grow, and contribute to projects that have a positive impact. Outside of work, I enjoy exploring new ideas, staying curious, and finding inspiration in the everyday. \n Outside of my professional life, I’m a curious person who loves exploring new places, trying out different activities, and meeting new people. I thrive on gaining fresh perspectives and finding inspiration in the world around me. When I’m not working, you’ll often find me enjoying a good book, delving into creative hobbies, or simply relaxing and recharging. I’m always looking to grow, not only in my career but as a person, and I aim to bring that growth into everything I do.",
+    about: "I’m someone who’s passionate about creating digital experiences that truly resonate. I focus on understanding people’s needs and enjoy building user-friendly websites that help businesses connect with their audiences. Whether I’m working alone or with a team, I’m motivated by a love for learning, growing, and making a positive impact through my work. \n When I’m not working, you’ll probably find me reading, exploring creative hobbies, or simply recharging. ",
     experience: [
         {
             company: "Matrix Information Technology",
             position: "Fullstack Developer",
             period: "Oct 2021 - present",
+            links: "#",
             details: [
-                "Developed and maintained web and mobile applications, ensuring the efficiency and support of existing features. Focused on designing intuitive UI/UX interfaces with tools to enhance the user experience, while prioritizing clean, maintainable, and well-documented code for smooth collaboration."
+                "Developed web and mobile applications, ensuring the efficiency and support of existing features. Focused on designing intuitive UI/UX interfaces with tools to enhance the user experience, while prioritizing clean, maintainable, and well-documented code for smooth collaboration."
             ],
         },
         {
             company: "Bangga Berbangsa Berbudaya",
             position: "Intern Developer",
             period: "Sep 2019 - Apr 2020",
+            links: "https://b3.sbs",
             details: [
-                "Involved in the development, redesign, and security enhancements of various WordPress websites for clients, including government organizations and private businesses. Redesigning client UI and patched security vulnerabilities."
+                "Involved in the development, redesign, security enhancements of various WordPress websites for clients, including government organizations and private businesses. Redesigning client UI and patched security vulnerabilities."
             ],
         }
     ],
@@ -24,11 +33,11 @@ let resumeData = {
         period: "Aug 2017 - Aug 2022"
     }],
     skills: [
-        { name: "React", icon: "" },
-        { name: "PHP", icon: "" },
-        { name: "SQL", icon: "" },
-        { name: "Vue", icon: "" },
-        { name: "Figma", icon: "" }
+        { name: "React", icon: <FaReact></FaReact> },
+        { name: "PHP", icon: <FaPhp></FaPhp> },
+        { name: "SQL", icon: <SiMysql></SiMysql> },
+        { name: "Vue", icon: <FaVuejs></FaVuejs> },
+        { name: "Figma", icon: <FaFigma></FaFigma> }
     ]
 }
 export default resumeData

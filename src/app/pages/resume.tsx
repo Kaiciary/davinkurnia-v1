@@ -1,10 +1,9 @@
 "use client";
 import { useState } from "react";
-import Button from "../components/ui/button"
 import resumeData from "../data/resumeData"
 import Experience from "../components/experience";
-import Education from "../components/about";
 import About from "../components/about";
+import Skills from "../components/skills";
 
 const Service: React.FC = () => {
 
@@ -16,6 +15,8 @@ const Service: React.FC = () => {
                 return <About aboutMe={resumeData.about} />;
             case "experience":
                 return <Experience experience={resumeData.experience} />;
+            case "skills":
+                return <Skills skills={resumeData.skills}></Skills>
         }
     };
 
@@ -27,16 +28,16 @@ const Service: React.FC = () => {
                         <h1 className="h2">My Resume</h1>
                         <div className="flex xl:justify-end justify-center">
                             <ul className="flex xl:flex-col flex-row xl:gap-0 gap-10">
-                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 transition-all" onClick={() => setActiveTab("about")}>About</li>
-                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 transition-all" onClick={() => setActiveTab("experience")}>Experience</li>
-                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 transition-all" onClick={() => setActiveTab("skills")}>Skills</li>
+                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 focus:underline active:underline transition-all" onClick={() => setActiveTab("about")}>About</li>
+                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 focus:underline active:underline transition-all" onClick={() => setActiveTab("experience")}>Experience</li>
+                                <li className="my-4 cursor-pointer xl:h4 hover:text-teal-500 focus:underline active:underline transition-all" onClick={() => setActiveTab("skills")}>Skills</li>
                             </ul>
                         </div>
                     </div>
                     <div className="mt-4 xl:mt-0">
                         <h1 className="h3 xl:pt-4">{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</h1>
                         <div className="mt-4 flex xl:justify-start justify-center">
-                            <div className="xl:max-w-xl max-w-[500px]">
+                            <div className="xl:max-w-xl max-w-[450px]">
                                 {renderContent()}
                             </div>
                         </div>

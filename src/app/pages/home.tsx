@@ -3,7 +3,7 @@ import Button from "../components/ui/button"
 
 export default function Homepage() {
     return (
-        <div className="py-8 xl:py-32">
+        <div className="py-32 xl:py-32">
             <div className="container mx-auto xl:block text-center xl:text-left">
                 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
                     <div>
@@ -12,7 +12,7 @@ export default function Homepage() {
                             <br></br>
                             <span className="text-teal-500">Davin Kurnia</span>
                         </h1>
-                        <p className="max-w-[500px] mb-9 text-white/80 pt-8">
+                        <p className="xl:max-w-[500px] max-w-[450px] mb-9 text-white/80 pt-8 text-base">
                             I’m a software developer passionate about creating innovative applications and solving problems to deliver impactful solutions using various programming languages and technologies.  </p>
                         <div className="flex xl:justify-start justify-center">
                         <Button variant="outline" size='lg' className="uppercase flex items-center gap-2">

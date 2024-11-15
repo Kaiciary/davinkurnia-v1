@@ -17,7 +17,7 @@ const MobileNav = () => {
             <Sheet isOpen={isSheetOpen} onClose={toggleSheet}>
             {links.map((link, index) => {
                 return (
-                    <Link href={link.path} key={index} className='hover:text-teal-500 transition-all'>
+                    <Link href={link.path} key={index} className='hover:text-teal-500 hover:underline transition-all'>
                         {link.name}
                     </Link>
                 )
