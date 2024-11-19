@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import resumeData from "../data/resumeData"
 import Experience from "../components/experience";
 import About from "../components/about";
@@ -8,7 +8,26 @@ import Skills from "../components/skills";
 const Service: React.FC = () => {
 
     const [activeTab, setActiveTab] = useState("about");
+    const [aditionalText, setAditionalText] = useState("About Me");
 
+
+      // Update aditionalText whenever activeTab changes
+  useEffect(() => {
+    switch (activeTab) {
+      case "about":
+        setAditionalText("About Me");
+        break;
+      case "experience":
+        setAditionalText("My Experience");
+        break;
+      case "skills":
+        setAditionalText("My Skills");
+        break;
+      default:
+        setAditionalText("");
+    }
+  }, [activeTab]);
+  
     const renderContent = () => {
         switch (activeTab) {
             case "about":
@@ -35,7 +54,7 @@ const Service: React.FC = () => {
                         </div>
                     </div>
                     <div className="mt-4 xl:mt-0">
-                        <h1 className="h3 xl:pt-4">{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</h1>
+                        <h1 className="h3 xl:pt-4">{aditionalText}</h1>
                         <div className="mt-4 flex xl:justify-start justify-center">
                             <div className="xl:max-w-xl max-w-[450px]">
                                 {renderContent()}

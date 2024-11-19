@@ -1,6 +1,7 @@
 import '../css/experience.css';
 
 interface ExperienceData {
+    tech: any;
     links: string;
     company: string;
     position: string;
@@ -19,8 +20,11 @@ const Experience: React.FC<{ experience: ExperienceData[] }> = ({ experience }) 
                     <p className='text-left'>{exp.period}</p>
                     <div className="h-4"></div>
                     {exp.details.length > 0 && (
-                        <p className="text-gray-400 pb-16 xl:text-left text-left">{exp.details[0]}</p> 
+                        <p className="text-gray-400 text-left">{exp.details[0]}</p>
                     )}
+                    <p className='pb-16 flex flex-wrap'> {exp.tech.map((tec: any, index: any)=> (
+                        <p className='text-teal-500 bg-teal-950 rounded text-sm p-1 mr-1.5 mt-2' key={index}>{tec}</p>
+                    ))} </p>
                 </li>
             ))}
         </ul>

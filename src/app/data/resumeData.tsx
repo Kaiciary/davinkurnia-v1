@@ -19,6 +19,7 @@ let resumeData = {
             details: [
                 "Developed web and mobile applications, ensuring the efficiency and support of existing features. Focused on designing intuitive UI/UX interfaces with tools to enhance the user experience, while prioritizing clean, maintainable, and well-documented code for smooth collaboration."
             ],
+            tech:['JavaScript', 'HTML & CSS', 'TypeScript', 'React', 'React Native', 'Next.js', 'Node.js', 'PHP', 'sqlserver', 'Storybook']
         },
         {
             company: "Bangga Berbangsa Berbudaya",
@@ -28,6 +29,8 @@ let resumeData = {
             details: [
                 "Involved in the development, redesign, security enhancements of various WordPress websites for clients, including government organizations and private businesses. Redesigning client UI and patched security vulnerabilities."
             ],
+            tech:['JavaScript', 'HTML & CSS', 'PHP', 'Wordpress']
+      
         }
     ],
     education: [{
