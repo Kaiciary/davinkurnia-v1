@@ -19,7 +19,7 @@ let resumeData = {
             details: [
                 "Developed web and mobile applications, ensuring the efficiency and support of existing features. Focused on designing intuitive UI/UX interfaces with tools to enhance the user experience, while prioritizing clean, maintainable, and well-documented code for smooth collaboration."
             ],
-            tech:['JavaScript', 'HTML & CSS', 'TypeScript', 'React', 'React Native', 'Next.js', 'Node.js', 'PHP', 'sqlserver', 'Storybook']
+            tech: ['JavaScript', 'HTML & CSS', 'TypeScript', 'React', 'React Native', 'Flutter', 'Next.js', 'Node.js', 'PHP', 'sqlserver', 'Storybook']
         },
         {
             company: "Bangga Berbangsa Berbudaya",
@@ -29,8 +29,8 @@ let resumeData = {
             details: [
                 "Involved in the development, redesign, security enhancements of various WordPress websites for clients, including government organizations and private businesses. Redesigning client UI and patched security vulnerabilities."
             ],
-            tech:['JavaScript', 'HTML & CSS', 'PHP', 'Wordpress']
-      
+            tech: ['JavaScript', 'HTML & CSS', 'PHP', 'Wordpress']
+
         }
     ],
     education: [{
@@ -48,6 +48,26 @@ let resumeData = {
         { name: "Flutter", icon: <RiFlutterFill></RiFlutterFill> },
         { name: "AWS", icon: <FaAws></FaAws> },
         { name: "Vue", icon: <FaVuejs></FaVuejs> },
+    ],
+    projects: [
+        {
+            name: "Bethany Lampung Church App",
+            desc: "Designed and implemented a church app to enhance community engagement and streamline church operations. ",
+            tech: ['Flutter', 'Mysql', 'PHP', 'Javascript', 'HTML & CSS'],
+            url: "#"
+        },
+        {
+            name: "Mawar Sharon Church Salatiga Reservation",
+            desc: "Created a reservation app to manage service bookings and event registrations during COVID-19 pandemic.",
+            tech: ['Vue', 'Mysql', 'Node.js', 'Javascript', 'HTML & CSS'],
+             url: "#"
+        },
+        {
+            name: "Mendesak.id",
+            desc: "Part of the team that developed this platform, which connects users with a range of on-demand services.",
+            tech: ['Stakeholder Coordination', 'Product Roadmap', 'Development Roadmap'],
+            url: "https://mendesak.id"
+        },
     ]
 }
 export default resumeData
