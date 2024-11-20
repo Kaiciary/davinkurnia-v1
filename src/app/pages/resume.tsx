@@ -40,7 +40,7 @@ const Service: React.FC = () => {
     };*/
 
     return (
-        <div className="pt-10 xl:py-32">
+        <div className="pt-10 xl:py-32 pl-3">
             <div className="container mx-auto xl:block text-left items-center">
                 <div className="flex flex-col xl:flex-row xl:gap-32">
                     {/*<div className="text-left">

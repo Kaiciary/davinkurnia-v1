@@ -58,31 +58,37 @@ let resumeData = {
             name: "Bethany Lampung Church App",
             desc: "Designed and implemented a church app to enhance community engagement and streamline church operations. ",
             tech: ['Flutter', 'Mysql', 'PHP', 'Javascript', 'HTML & CSS'],
-            url: "#"
+            url: "#",
+            image: "/reservation.jpeg"
         },
         {
-            name: "Mawar Sharon Church Salatiga Reservation",
+            name: "Mawar Sharon Church Salatiga App",
             desc: "Created a reservation app to manage service bookings and event registrations during COVID-19 pandemic.",
             tech: ['Vue', 'Mysql', 'Node.js', 'Javascript', 'HTML & CSS'],
-             url: "#"
+            url: "#",
+            image: "/reservation.jpeg"
+
         },
         {
             name: "Mendesak.id",
             desc: "Part of the team that developed this platform, which connects users with a range of on-demand services.",
             tech: ['Stakeholder Coordination', 'Product Roadmap', 'Development Roadmap'],
-            url: "https://mendesak.id"
+            url: "https://mendesak.id",
+            image: "/reservation.jpeg"
         },
         {
             name: "Polisi Salatiga",
             desc: "Built and maintained the official website for Polisi Salatiga, focusing on improving public communication and streamlining access to essential services.",
-             tech: ['Wordpress', 'PHP', 'HTML & CSS'],
-            url: "https://polisisalatiga.com"
+            tech: ['Wordpress', 'PHP', 'HTML & CSS'],
+            url: "https://polisisalatiga.com",
+            image: "/polisi.jpeg"
         },
         {
             name: "Davin kurnia v1",
             desc: "Creating this site for portofolio.",
             tech: ['Next JS', 'Typescript'],
-            url: "#"
+            url: "#",
+            image: "/reservation.jpeg"
         },
     ],
     contact:[

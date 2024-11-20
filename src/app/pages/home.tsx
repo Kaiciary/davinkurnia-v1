@@ -5,9 +5,9 @@ import resumeData from "../data/resumeData"
 
 export default function Homepage() {
     return (
-        <div className="pt-4 xl:py-32">
+        <div className="pt-4 xl:py-32 xl:pl-0 pl-3">
             <div className="container mx-auto xl:block text-left">
-                <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+                <div className="flex flex-col xl:flex-row items-left justify-between xl:pt-8 xl:pb-24">
                     <div>
                         <span className="text-xl">Software Developer</span>
                         <h1 className="h1">Hello Im,

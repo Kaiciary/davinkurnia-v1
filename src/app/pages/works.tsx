@@ -2,7 +2,7 @@ import MyWork from "../components/works"
 import resumeData from "../data/resumeData"
 
 const Works: React.FC = () => {
-    return (<div className="pt-8 xl:py-32">
+    return (<div className="pt-8 xl:py-32 pl-3">
         <div className="container mx-auto xl:block text-left ">
             <div className="flex flex-col xl:flex-row gap-32">
                 <div>
