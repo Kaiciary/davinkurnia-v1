@@ -1,10 +1,12 @@
 import { FiDownload } from "react-icons/fi"
 import Button from "../components/ui/button"
+import ContactIcons from "../components/contactIcons"
+import resumeData from "../data/resumeData"
 
 export default function Homepage() {
     return (
-        <div className="py-32 xl:py-32">
-            <div className="container mx-auto xl:block text-center xl:text-left">
+        <div className="pt-4 xl:py-32">
+            <div className="container mx-auto xl:block text-left">
                 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
                     <div>
                         <span className="text-xl">Software Developer</span>
@@ -12,10 +14,11 @@ export default function Homepage() {
                             <br></br>
                             <span className="text-teal-500">Davin Kurnia</span>
                         </h1>
-                        <p className="xl:max-w-[500px] max-w-[450px] mb-9 text-white/80 pt-8 text-base">
-                            I’m a software developer passionate about creating innovative applications and solving problems to deliver impactful solutions using various programming languages and technologies.  </p>
-                        <div className="flex xl:justify-start justify-center">
-                        <Button variant="outline" size='lg' className="uppercase flex items-center gap-2">
+                        <p className="xl:max-w-[500px] max-w-[450px] mb-4 text-white/80 pt-2 pr-8 text-base">
+                        I'm a software developer who loves turning ideas into real-world applications and finding creative solutions using various technologies.  </p>
+                        <ContactIcons contact={resumeData.contact}></ContactIcons>
+                        <div className="flex justify-start">
+                        <Button variant="outline" size='lg' className="uppercase flex items-center gap-2 mt-4">
                             <span>Download CV</span>
                             <FiDownload className="text-xl"></FiDownload>
                         </Button>

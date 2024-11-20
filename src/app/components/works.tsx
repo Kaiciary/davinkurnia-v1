@@ -14,7 +14,7 @@ interface myWorkProps {
 
 
 const MyWork = ({ works }: myWorkProps) => {
-    return <ul className="xl:ml-0 ml-[25] xl:mt-0 mt-10">
+    return <ul className="xl:mt-0 mt-3">
         {works.map((project, index) =>
             <li key={index}>
                 <p className='text-left pb-2'>

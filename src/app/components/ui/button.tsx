@@ -22,9 +22,9 @@ const Button: React.FC<ButtonProps> = ({ variant = 'primary', size='default', ch
   };
 
   const sizeClasses: Record<ButtonSize, string> = {
-    default: 'h-[44px] px-6',
-    md: 'h-[48px] px-6',
-    lg: 'h-[56px] px-8 text-sm uppercase tracking'
+    default: 'h-[36px] px-6',
+    md: 'h-[30px] px-6',
+    lg: 'h-[44px] px-8 text-sm uppercase tracking'
   }
 
   const buttonClasses = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;

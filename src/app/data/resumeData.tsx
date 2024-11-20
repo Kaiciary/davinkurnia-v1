@@ -7,9 +7,13 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { RiFlutterFill } from "react-icons/ri";
 import { FaAws } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 let resumeData = {
-    about: "I’m someone who’s passionate about creating digital experiences that truly resonate. I focus on understanding people’s needs and enjoy building user-friendly websites that help businesses connect with their audiences. Whether I’m working alone or with a team, I’m motivated by a love for learning, growing, and making a positive impact through my work. \n When I’m not working, you’ll probably find me reading, exploring creative hobbies, or simply recharging. ",
+    about: "I’m someone who’s passionate about creating digital experiences that truly resonate. I focus on understanding people’s needs and enjoy building user-friendly websites that help businesses connect with their audiences. \n Whether I’m working alone or with a team, I’m motivated by a love for learning, growing, and making a positive impact through my work. \n When I’m not working, you’ll probably find me reading, exploring creative hobbies, or simply recharging. ",
     experience: [
         {
             company: "Matrix Information Technology",
@@ -68,6 +72,41 @@ let resumeData = {
             tech: ['Stakeholder Coordination', 'Product Roadmap', 'Development Roadmap'],
             url: "https://mendesak.id"
         },
+        {
+            name: "Polisi Salatiga",
+            desc: "Built and maintained the official website for Polisi Salatiga, focusing on improving public communication and streamlining access to essential services.",
+             tech: ['Wordpress', 'PHP', 'HTML & CSS'],
+            url: "https://polisisalatiga.com"
+        },
+        {
+            name: "Davin kurnia v1",
+            desc: "Creating this site for portofolio.",
+            tech: ['Next JS', 'Typescript'],
+            url: "#"
+        },
+    ],
+    contact:[
+        {
+            type: "linkedin",
+            link: "https://linkedin.com/dafloe",
+            icon: <FaLinkedin></FaLinkedin>
+        },
+        {
+            type: "Github",
+            link: "https://Github.com/kaiciary",
+            icon: <FaGithub></FaGithub>
+        },
+        {
+            type: "email",
+            link: "mailto:hello@davinkurnia.com",
+            icon: <FaEnvelope></FaEnvelope>
+        },
+        {
+            type: "instagram",
+            link: "https://instagram.com/hiuredhy",
+            icon: <FaInstagram></FaInstagram>
+        },
+       
     ]
 }
 export default resumeData
