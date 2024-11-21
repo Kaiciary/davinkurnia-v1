@@ -14,12 +14,12 @@ export default function Homepage() {
                             <br></br>
                             <span className="text-teal-500">Davin Kurnia</span>
                         </h1>
-                        <p className="xl:max-w-[500px] max-w-[450px] mb-4 text-white/80 pt-2 pr-8 text-base">
+                        <p className="xl:max-w-[600px] max-w-[450px] mb-4 text-white/80 pt-2 pr-8 text-base">
                         I'm a software developer who loves turning ideas into real-world applications and finding creative solutions using various technologies.  </p>
                         <ContactIcons contact={resumeData.contact}></ContactIcons>
                         <div className="flex justify-start">
                         <Button variant="outline" size='lg' className="uppercase flex items-center gap-2 mt-4">
-                            <span>Download CV</span>
+                            <span className="xl:text-md">Download CV</span>
                             <FiDownload className="text-xl"></FiDownload>
                         </Button>
                         </div>

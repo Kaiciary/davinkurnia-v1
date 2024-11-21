@@ -11,7 +11,7 @@ interface contactProps {
 const ContactIcons = ({ contact }: contactProps) => {
     return <div className="flex gap-5">{
         contact.map((cont, index) =>
-            <div key={index} className="text-2xl">
+            <div key={index} className="text-2xl xl:text-3xl">
                 <a
                     href={cont.link}
                     target="_blank"

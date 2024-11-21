@@ -46,7 +46,7 @@ const MyWork = ({ works }: myWorkProps) => {
                     layout="intrinsic"
                     width={500}
                     height={300}
-                    className="rounded-md xl:w-[800px] xl:h-[600px] w-[200] h-[100] pb-10"
+                    className="rounded-md xl:w-[400px] xl:h-[200px] w-[200] h-[100] pb-10"
                 />
             </li>
         )}

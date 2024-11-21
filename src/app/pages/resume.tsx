@@ -40,7 +40,7 @@ const Service: React.FC = () => {
     };*/
 
     return (
-        <div className="pt-10 xl:py-32 pl-3">
+        <div className="pt-10 xl:pt-28 pl-3">
             <div className="container mx-auto xl:block text-left items-center">
                 <div className="flex flex-col xl:flex-row xl:gap-32">
                     {/*<div className="text-left">
@@ -54,24 +54,34 @@ const Service: React.FC = () => {
                         </div>
                     </div>*/}
                     <div className="mt-4 xl:mt-0">
-                        <h1 className="h3 font-bold xl:pt-4 pt-7">About Me</h1>
-                        <div className="mt-4 flex justify-start">
-                            <div className="xl:max-w-xl max-w-[450px] text-base pr-1">
-                                <About aboutMe={resumeData.about} />
+
+                        <div className="xl:flex">
+                            <div>
+                                <h1 className="h3 font-bold xl:pt-4 pt-7">About Me</h1>
+                                <div className="mt-4 flex justify-start">
+                                    <div className="xl:max-w-[600px] max-w-[450px] text-base pr-1">
+                                        <About aboutMe={resumeData.about} />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <h1 className="h3 xl:pt-4">My Experience</h1>
-                        <div className="mt-4 flex justify-start">
-                            <div className="xl:max-w-xl max-w-[450px]">
-                                <Experience experience={resumeData.experience} />
-                            </div>
-                        </div>
-                        {/*<h1 className="h3 xl:pt-4">My Skills</h1>
+
+                            <div>
+                                <h1 className="h3 xl:pt-4">My Experience</h1>
+                                <div className="mt-4 flex justify-start">
+                                    <div className="xl:max-w-xl max-w-[450px]">
+                                        <Experience experience={resumeData.experience} />
+                                    </div>
+                                </div>
+                                {/*<h1 className="h3 xl:pt-4">My Skills</h1>
                         <div className="mt-4 flex justify-start">
                             <div className="xl:max-w-xl max-w-[450px]">
                                 <Skills skills={resumeData.skills}></Skills>
                             </div>
                         </div>*/}
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
