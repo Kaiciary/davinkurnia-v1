@@ -15,7 +15,7 @@ interface myWorkProps {
 
 
 const MyWork = ({ works }: myWorkProps) => {
-    return <ul className="xl:mt-0 mt-3">
+    return <ul className="xl:mt-0 mt-3 xl:grid xl:grid-rows-3 xl:grid-flow-col xl:gap-10">
         {works.map((project, index) =>
             <li key={index}>
                 <p className='text-left pb-2'>
@@ -34,7 +34,7 @@ const MyWork = ({ works }: myWorkProps) => {
                     </a>
 
                 </p>
-                <p className='text-left text-sm text-white/80'>
+                <p className='text-left text-sm text-white/80 xl:pr-20'>
                     {project.desc}
                 </p>
                 <div className='pb-4 flex flex-wrap'> {project.tech.map((tec: any, index: any) => (
@@ -46,7 +46,7 @@ const MyWork = ({ works }: myWorkProps) => {
                     layout="intrinsic"
                     width={500}
                     height={300}
-                    className="rounded-md xl:w-[400px] xl:h-[200px] w-[200] h-[100] pb-10"
+                    className="rounded-md xl:w-[200px] xl:h-[100px] w-[200] h-[100] pb-10"
                 />
             </li>
         )}
